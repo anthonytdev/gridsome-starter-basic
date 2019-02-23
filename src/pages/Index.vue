@@ -7,13 +7,11 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Stellar by HTML5 UP'
   }
 }
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
+
 </style>

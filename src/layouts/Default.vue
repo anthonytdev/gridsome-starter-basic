@@ -1,25 +1,22 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-      </nav>
-    </header>
+  <div class="wrapper">
+    <Header-layout></layout-header>
+    <Nav-layout></layout-nav>
     <slot/>
+    <Footer-layout></layout-footer>
   </div>
 </template>
 
-<static-query>
-query {
-  metaData {
-    siteName
+<script>
+import HeaderLayout from "~partials/Header.vue";
+import NavLayout from "~partials/Nav.vue";
+import FooterLayout from "~partials/Footer.vue";
+
+export default {
+  components: {
+    HeaderLayout,
+    NavLayout,
+    FooterLayout
   }
 }
-</static-query>
-
-<style>
-
-</style>
+</script>
